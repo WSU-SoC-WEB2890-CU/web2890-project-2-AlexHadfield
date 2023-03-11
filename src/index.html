@@ -13,9 +13,9 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg bg-light">
+  <nav class="navbar navbar-expand-md bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <img src="images/logo.png" alt="Two Color Photography Website">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,19 +24,19 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="aboutUs.html">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="services.html">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="contactUs.html">Contact Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
         </ul>
       </div>
@@ -45,7 +45,7 @@
 
   <div id="bodyMargin">
     <section id="summary">
-      <div class="p-5 m-4 bg-dark text-white shadow">
+      <div class="p-5 m-4 bg-dark text-white shadow rounded">
         <div class="container-fluid py-5">
           <h3>Two Color Photography specializes in capturing the precious moments of your family's journey, from newborns and 
             maternity to milestones, the baby's first year, and family photos. Our founder is also an area coordinator for 
@@ -56,21 +56,81 @@
   
     <section id="callToAction">
       <div class="row text-center align-items-stretch">
-        <div class="col-lg-6 d-flex">
-          <div class="me-lg-0 mx-4 mb-4 bg-white text-black shadow d-flex align-items-center justify-content-center">
+        <div class="col-md-6 d-flex">
+          <div class="me-lg-0 me-md-2 mx-4 mb-4 bg-white text-black shadow d-flex align-items-center justify-content-center rounded" id="callImage">
             <!-- Photo -->
-            <img src="images/babyCallToAction.jpg" alt="Baby peeking out from towel">
+            <img src="images/babyCallToAction.jpg" alt="Baby peeking out from towel" class="rounded">
           </div>
         </div>
-        <div class="col-lg-6 d-flex">
-          <div class="p-5 ms-lg-0 mx-4 mb-4 bg-white text-black shadow d-flex align-items-center justify-content-center">
+        <div class="col-md-6 d-flex">
+          <div class="p-5 ms-lg-0 ms-md-2 mx-4 mb-4 bg-white text-black shadow d-flex align-items-center justify-content-center rounded" id="callText">
             <!-- Call To Action Text -->
             <div class="container-fluid py-5">
               <h3>Let us capture your family's precious moments. Contact us today to schedule your photography session and preserve 
                 memories that will last a lifetime.</h3>
-              <a href="#" class="btn btn-primary mt-4">Contact Us</a>
+                <a href="#" class="btn btn-primary d-flex align-items-center justify-content-center mt-4">Contact Us</a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="row mx-2">
+        <div class="col-lg-4 col-md-6 col-sm-12  mb-4 mb-lg-0">
+          <img
+            src="images/baby1.jpg"
+            class="shadow rounded mb-4 horizontalGridImage"
+            alt="Boat on Calm Water"
+          />
+
+          <img
+            src="images/baby2.jpg"
+            class="shadow rounded mb-lg-4 verticalGridImage"
+            alt="Wintry Mountain Landscape"
+          />
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12  mb-4 mb-lg-0">
+          <img
+            src="images/baby3.jpg"
+            class="shadow rounded mb-4 verticalGridImage"
+            alt="Mountains in the Clouds"
+          />
+
+          <img
+            src="images/baby4.jpg"
+            class="shadow rounded mb-lg-4 horizontalGridImage"
+            alt="Boat on Calm Water"
+          />
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12  mb-4 mb-lg-0">
+          <img
+            src="images/baby5.jpg"
+            class="shadow rounded mb-4 horizontalGridImage"
+            alt="Waves at Sea"
+          />
+
+          <img
+            src="images/baby6.jpg"
+            class="shadow rounded mb-lg-4 verticalGridImage"
+            alt="Yosemite National Park"
+          />
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12  mb-4 mb-lg-0" id="mediumPhotos">
+          <img
+            src="images/baby7.jpg"
+            class="shadow rounded mb-4 verticalGridImage"
+            alt="Mountains in the Clouds"
+          />
+
+          <img
+            src="images/baby8.jpg"
+            class="shadow rounded mb-lg-4 horizontalGridImage"
+            alt="Boat on Calm Water"
+          />
         </div>
       </div>
     </section>
@@ -79,18 +139,22 @@
   <footer class="bg-dark text-light">
     <div class="container py-4">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-4">
+          <h5 class="mb-3">Location:</h5>
+          <p><a href="https://goo.gl/maps/2Qjk83Hi5uwwv4eUA">675 S 850 E<br>Brigham City, Utah</a></p>
+        </div>
+        <div class="col-md-4">
           <h5 class="mb-3">Our Hours:</h5>
           <ul class="list-unstyled">
-            <li>Mon: 9-2</li>
-            <li>Tue-Fri: 9-6</li>
+            <li>Mon: 9am-2pm</li>
+            <li>Tue-Fri: 9am-6pm</li>
             <li>Sat: By Appointment</li>
             <li>Sun: Closed</li>
           </ul>
         </div>
-        <div class="col-md-6">
-          <h5 class="mb-3">Location:</h5>
-          <p>675 S 850 E<br>Brigham City, Utah</p>
+        <div class="col-md-4">
+          <h5 class="mb-3">Email:</h5>
+          <p><a href="mailto:amber@twocolorphotography.com">amber@twocolorphotography.com</a></p>
         </div>
       </div>
     </div>

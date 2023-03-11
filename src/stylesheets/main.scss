@@ -1,4 +1,13 @@
 /* Your styles go here */
+
+// THEME COLORS 
+$road-paint-yellow:    rgb(244, 173, 9);
+$forest-green:  rgb(58, 151, 62);
+
+$primary: $road-paint-yellow;
+$secondary: $forest-green;
+
+// Imports
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -10,8 +19,8 @@
     width: 150px;
 }
 
-// Desktop
-@media screen and (min-width: 992px) {
+// Tablet
+@include media-breakpoint-up(md) {
     .navbar-brand img {
         width: 200px;
     }
@@ -27,6 +36,51 @@
         margin-top: 1em;
     }
 
+    #callImage {
+        margin-right: 0 !important;
+    }
+
+    #callText {
+        margin-left: 0 !important;
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    h3 {
+        font-size: large;
+    }
+}
+
+// Desktop
+@include media-breakpoint-up(lg) {
+    #bodyMargin {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #callToAction a {
+        font-size: x-large;
+    }
+
+    #mediumPhotos {
+        display: none;
+    }
+
+    #callToAction a {
+        height: 5rem;
+    }
+}
+
+// Large Desktop
+@include media-breakpoint-up(xl) {
+    #bodyMargin {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+// Extra Large Desktop
+@include media-breakpoint-up(xxl) {
     #bodyMargin {
         margin-left: 15%;
         margin-right: 15%;
@@ -36,6 +90,14 @@
 .navbar .navbar-nav .nav-link {
     color: black;
     font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 .navbar .navbar-nav {
@@ -50,6 +112,26 @@
     object-fit: cover;
 }
 
-footer .row .col-md-6 *{
+#callToAction a {
+    width: 100%;
+}
+
+.horizontalGridImage {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.verticalGridImage {
+    width: 100%;
+    height: 50rem;
+    object-fit: cover;
+}
+
+footer .row *{
     text-align: center;
+}
+
+footer a {
+    color: white;
 }
