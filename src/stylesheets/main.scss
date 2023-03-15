@@ -53,9 +53,15 @@ $secondary: $forest-green;
     }
 }
 
+// Tablet Down
 @include media-breakpoint-down(lg) {
     h3 {
         font-size: large;
+    }
+
+    #priceCards {
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 }
 
