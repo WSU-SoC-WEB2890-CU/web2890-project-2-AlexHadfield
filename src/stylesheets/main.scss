@@ -44,11 +44,19 @@ $secondary: $forest-green;
         margin-right: 0 !important;
     }
 
+    #contactInfo {
+        margin-right: 0 !important;
+    }
+
     #callText {
         margin-left: 0 !important;
     }
 
     #howStartImage {
+        margin-left: 0 !important;
+    }
+
+    #contactForm {
         margin-left: 0 !important;
     }
 }
@@ -82,6 +90,10 @@ $secondary: $forest-green;
 
     #callToAction a {
         height: 5rem;
+    }
+
+    textarea {
+        height: 15rem;
     }
 }
 
@@ -124,6 +136,10 @@ $secondary: $forest-green;
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+#mapContainer {
+    margin-bottom: -0.4rem;
 }
 
 #howStarted img {
