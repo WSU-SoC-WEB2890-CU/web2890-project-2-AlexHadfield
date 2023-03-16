@@ -55,14 +55,14 @@
     <section id="contact">
       <div class="row text-center align-items-stretch">
         <div class="col-md-6 d-flex">
-          <div class="p-5 w-100 me-lg-0 me-md-2 mx-4 mb-4 bg-white text-black shadow d-flex align-items-center justify-content-center rounded" id="contactInfo">
+          <div class="p-3 w-100 me-lg-0 mx-4 mb-4 bg-white text-black shadow d-flex align-items-center justify-content-center rounded" id="contactInfo">
             <!-- Info -->
             <div class="container-fluid py-5">
               <h2 class="text-primary">Two Color Photography:</h2>
               <h3 class="text-primary">Utah's Premier Newborn Photographer</h3>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"><h5>Address:</h5>40 N 100 E Brigham City, Utah 84302</li>
-                <li class="list-group-item"><h5>Contact Info:</h5>amber@twocolorphotography.com<br>(435) 720-3801</li>
+                <li class="list-group-item"><h5>Address:</h5><a href="https://goo.gl/maps/MDG7erEJvTm6YdPD6">40 N 100 E Brigham City, Utah 84302</a></li>
+                <li class="list-group-item"><h5>Contact Info:</h5><a href="mailto:amber@twocolorphotography.com">amber@twocolorphotography.com</a><br><a href="tel:4357203801">(435) 720-3801</a></li>
                 <li class="list-group-item"><h5>Open Hours:</h5>Monday: Mon: 9am-2pm<br>Tue-Fri: 9am-6pm<br>Sat: By Appointment<br>Sun: Closed</li>
               </ul>
             </div>
@@ -75,26 +75,26 @@
               <h3 class="text-primary text-center">Contact Form:</h3>
               <div class="mb-3">
                 <label for="userName" class="form-label">Name:</label>
-                <input type="text" class="form-control" id="userName">
+                <input type="text" class="form-control" id="userName" required>
               </div>
               <div class="mb-3">
                 <label for="userEmail" class="form-label">Email Address:</label>
-                <input type="email" class="form-control" id="userEmail">
+                <input type="email" class="form-control" id="userEmail" required>
               </div>
               <div class="mb-3">
                 <label for="userPhone" class="form-label">Phone:</label>
-                <input type="tel" class="form-control" id="userPhone">
+                <input type="tel" class="form-control" id="userPhone" pattern="[(]?\d{3}[-)]?[ ]?\d{3}[-]?\d{4}" required>
               </div>
               <label for="userReason" class="form-label">Reason For Contact:</label>
-              <select class="form-select form-select-md mb-3" id="userReason">
-                <option selected>Select An Option</option>
+              <select class="form-select form-select-md mb-3" id="userReason" required>
+                <option value="">Select An Option</option>
                 <option value="1">Schedule Newborn Photos</option>
                 <option value="2">Schedule Family Photos</option>
                 <option value="3">Other</option>
               </select>
               <div class="mb-3">
                 <label for="userMessage" class="form-label">Message:</label>
-                <textarea class="form-control" id="userMessage"></textarea>
+                <textarea class="form-control" id="userMessage" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary w-100">Submit</button>
             </form>
@@ -129,8 +129,12 @@
           </ul>
         </div>
         <div class="col-md-4">
-          <h5 class="mb-3">Email:</h5>
-          <p><a href="mailto:amber@twocolorphotography.com">amber@twocolorphotography.com</a></p>
+          <h5 class="mb-3">Contact Info:</h5>
+          <p>
+            <a href="mailto:amber@twocolorphotography.com">amber@twocolorphotography.com</a>
+            <br>
+            <a href="tel:4357203801">(435) 720-3801</a>
+          </p>
         </div>
       </div>
     </div>
